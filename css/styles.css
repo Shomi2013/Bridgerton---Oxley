@@ -5,10 +5,10 @@
   font-size: 20px;
 }
 
-.header .navbar navbar-expand-lg bg-body-tertiary {
+.header .navbar .navbar-expand-lg .bg-body-tertiary {
   background-image: linear-gradient(90deg, #FFFFC6 0%, #C6C690 35%, #d6bfe9 100%);
 }
-.header .navbar navbar-expand-lg bg-body-tertiary .btn btn-outline-success {
+.header .navbar .navbar-expand-lg .bg-body-tertiary .btn .btn-outline-success {
   color: #6c1baf;
 }
 .header .logo {
@@ -168,37 +168,48 @@
   text-align: center;
 }
 .bodytemporadas .temporadasdelaserie .temporada1{
-  width: 250px;
-  height: 320px;
+  width: 50%;
   border-radius: 50px;
   cursor: pointer;
 }
 .bodytemporadas .temporada2 {
-  width: 250px;
-  height: 320px;
+  width: 50%;
   border-radius: 50px;
   cursor: pointer;
 }
 .bodytemporadas .temporada3 {
-  width: 250px;
-  height: 300px;
+  width: 50%;
   border-radius: 50px;
   cursor: pointer;
 }
 .bodytemporadas .queencharlote {
-  width: 250px;
-  height: 300px;
+  width: 50%;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.cajapersonajes{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cajapersonajes .img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*responsive personajes y libros*/
 @media only screen and (max-width: 500px) {
   .bodypersonajes {
-    grid-template-columns: 1 100px;
-    grid-template-rows: repeat(3 100px);
+    grid-template-columns: 2 100px;
+    grid-template-rows: repeat (3, 100px);
     background-color: #f3e7f5;
-    align-items: center;
+    box-sizing: border-box;
   }
   .titulopersonajes {
     text-align: center;
@@ -210,8 +221,7 @@
     text-align: center;
   }
   .libros {
-    width: 200px;
-    height: 100px;
+    width: 100%;
   }
   .bodylibros {
     justify-content: center;
@@ -224,14 +234,23 @@
     grid-template-rows: repeat(6 100px);
     background-color: #f3e7f5;
     align-items: center;
+    display: center;
   }
   .cajapersonajes {
     grid-template-columns: 1 100px;
     grid-template-rows: repeat(6 100px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .cajapersonajes .logolady{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
   }
   .logolady {
-    width: 50px;
-    height: 50px;
+    width: 45%;
   }
   .fondoprincipal {
     display: none;
@@ -244,53 +263,43 @@
 /*logos de personajes no pude encontrar su ruta por eso lo hice uno por uno*/
 /*imagenes Personajes*/
 .logolady {
-  width: 250px;
-  height: 250px;
+  width: 45%;
 }
 
 .logoladydanbury {
-  width: 250px;
-  height: 250px;
+  width: 45%;
 }
 
 .logoreina {
-  width: 200px;
-  height: 250px;
+  width: 45%;
 }
 
 .logoantony {
-  width: 220px;
-  height: 250px;
+  width: 45%;
 }
 
 .logopen {
-  width: 220px;
-  height: 250px;
+  width: 45%
 }
 
 .logoeloise {
-  width: 200px;
-  height: 200px;
+  width: 45%
 }
 
 .logodaphne {
-  width: 200px;
-  height: 200px;
+  width: 45%
 }
 
 .logosimon {
-  width: 200px;
-  height: 200px;
+  width: 45%;
 }
 
 .logokat {
-  width: 150px;
-  height: 200px;
+  width: 45%;
 }
 
 .logomarina {
-  width: 200px;
-  height: 200px;
+  width: 45%;
 }
 
 .bodypersonajes {
@@ -345,21 +354,21 @@
     align-items: center;
   }
   .bodytemporadas .temporadasdelaserie .temporada1 {
-    width: 120%;
-    height: 70%;
+    width: 95%;
   }
   .bodytemporadas .temporadasdelaserie .temporada2 {
-    width: 120%;
-    height: 70%;
+    width: 95%;
   }
   .bodytemporadas .temporadasdelaserie .temporada3 {
-    width: 120%;
-    height: 70%;
+    width: 95%;
   }
   .bodytemporadas .temporadasdelaserie .queencharlote {
-    width: 120%;
-    height: 70%;
+    width: 95%;
   }
+}
+
+.temporadasparrafo{
+  text-align: center;
 }
 /*responsive INDEX*/
 @media (max-width: 768px) {
